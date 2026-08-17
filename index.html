@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+            <button id="menu-btn">☰</button>
+
+            <div id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+            <button id="tema-btn">☀️</button>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Olá, eu sou Steven</h1>
+            <p><span id="texto-digitando"></span></p>
+            <button>Ver meus projetos</button>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <h3>Olá! Eu sou Steven</h3>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas e estou construindo minha carreira na área de tecnologia</p>
+            <p>Atualmente estou estudando desenvolvimento web, programação e desenvolvimento de sistemas.</p>
+            <p>Meu objetivo é me tornar um desenvolvedor de software e trabalhar na criação de soluções que sejam úteis, eficientes e bem estruturadas.</p>
+        </div>
+    </div>
+        </section>
+
+        <section id="projetos">
+
+            <h2>Projetos</h2>
+
+            <div class="filtros">
+                <button class="filtro ativo" data-filtro="todos">Todos</button>
+
+                <button class="filtro" data-filtro="javascript">JavaScript</button>
+
+                <button class="filtro" data-filtro="python">Python</button>
+
+                <button class="filtro" data-filtro="csharp">C#</button>
+            </div>
+
+            <div class="projetos-container" id="lista-projetos"></div>
+        </section>
+
+        <section id="habilidades">
+
+    <h2>Habilidades</h2>
+
+    <div class="habilidades-container">
+
+
+        <div class="habilidade">
+
+            <div class="habilidade-info">
+
+                <span>HTML</span>
+
+                <span>90%</span>
+
+            </div>
+
+            <div class="barra">
+
+                <div
+                    class="progresso"
+                    data-nivel="90"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="habilidade">
+
+            <div class="habilidade-info">
+
+                <span>CSS</span>
+
+                <span>80%</span>
+
+            </div>
+
+            <div class="barra">
+
+                <div
+                    class="progresso"
+                    data-nivel="80"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="habilidade">
+
+            <div class="habilidade-info">
+
+                <span>JavaScript</span>
+
+                <span>70%</span>
+
+            </div>
+
+            <div class="barra">
+
+                <div
+                    class="progresso"
+                    data-nivel="70"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="habilidade">
+
+            <div class="habilidade-info">
+
+                <span>Python</span>
+
+                <span>50%</span>
+
+            </div>
+
+            <div class="barra">
+
+                <div
+                    class="progresso"
+                    data-nivel="50"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="habilidade">
+
+            <div class="habilidade-info">
+
+                <span>C#</span>
+
+                <span>40%</span>
+
+            </div>
+
+            <div class="barra">
+
+                <div
+                    class="progresso"
+                    data-nivel="40"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="habilidade">
+
+            <div class="habilidade-info">
+
+                <span>Node.js</span>
+
+                <span>40%</span>
+
+            </div>
+
+            <div class="barra">
+
+                <div
+                    class="progresso"
+                    data-nivel="40"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <section id="contato">
+
+    <h2>Entre em contato</h2>
+
+    <div class="contato-container">
+
+        <form id="formulario-contato">
+
+            <div class="campo">
+
+                <label for="nome">
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                >
+
+                <small class="erro" id="erro-nome"></small>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                >
+
+                <small class="erro" id="erro-email"></small>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="mensagem">
+                    Mensagem
+                </label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    placeholder="Digite sua mensagem"
+                ></textarea>
+
+                <small class="erro" id="erro-mensagem"></small>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="botao-enviar"
+            >
+                Enviar mensagem
+            </button>
+
+
+            <p
+                id="mensagem-sucesso"
+                class="mensagem-sucesso"
+            ></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <div id="modal-projeto" class="modal">
+        <div class="modal-conteudo">
+            <button id="fechar-modal" class="fechar-modal">X</button>
+
+            <img id="modal-imagem" src="" alt="">
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+            <div id="modal-tecnologias" class="tecnologias"></div>
+            <div class="modal-botoes">
+                <a id="modal-link-projeto" href="#" target="_blank">
+                    <button>Abrir projeto</button>
+                </a>
+
+                <a id="modal-github" href="#" target="_blank">
+                    <button class="botao-github">GitHub</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Steven. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
